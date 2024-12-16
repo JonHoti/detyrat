@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Detyra e pare:</h2>
+    <p style="color: rgb(163, 4, 4);" id="p1"></p>
+    <script>
+            var vargu = ['Ferizaj','Gjakove','Malisheve','Prishtine','Prizren','Rahovec'];
+            var y = vargu.length;
+            var z ='';
+            var a = vargu.sort();
+            for(x=0;x<y;x++)
+            {
+                z+=vargu[x]+'<br>';
+            }
+            document.getElementById('p1').innerHTML = z;
+        </script>
+        <h2>Detyra 2:</h2>
+        <p id="p2"></p>
+        <script>
+            var vargu = ['Ferizaj','Gjakove','Malisheve','Prishtine','Prizren','Rahovec'];
+            var y = vargu.length;
+            var z ='';
+            var a = vargu.sort();
+            for(x=0;x<y;x++)
+            {
+                z+=vargu[x]+' eshte '+(x+1)+'<br>';
+            }
+            document.getElementById('p2').innerHTML = z;
+        </script>
+        <h2>Detyra e trete:</h2>
+        <p id="p3"></p>
+        <script>
+            var vargu = ['Ferizaj','Gjakove','Malisheve','Prishtine','Prizren','Rahovec'];
+            var y = vargu.length-1;
+            var z ='';
+            vargu.sort();
+            for(x=0;x<=y;y--)
+            {
+                z+=vargu[y]+' eshte '+(y+1)+'<br>';
+            }
+            document.getElementById('p3').innerHTML = z;
+        </script>
+        <h2>Detyra e katert:</h2>
+        <p id="p4"></p>
+        <script>
+             var vargu = ['111','222','333','444','555'];
+             var y = vargu.length;
+            var z ='';
+            var a = vargu.sort();
+            for(x=0;x<y;x++)
+            {
+                z+=vargu[x]+'<br>';
+            }
+            document.getElementById('p4').innerHTML = z;
+        </script>
+</body>
+</html>

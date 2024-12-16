@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date</h1>
+    <script>
+        var a= new Date();
+        document.write(a);
+    </script>
+    <br>
+    <br>
+    <script>
+        var a= new Date(2018, 2, 31, 15, 13, 50);
+        document.write(a+"<br>");
+    </script>
+    <br>
+    <script>
+        var b= new Date(3019);
+        document.write(b);
+    </script>
+    <br>
+    <br>
+    <script>
+        var d= new Date(99,10,12);
+        document.write(d+"<br>");
+    </script>
+    <br>
+
+    <h2>Date formats</h2>
+    <script>
+        var a= new Date("2019");
+        document.write(a+"<br>");
+
+        var b= new Date("05/30/2019");
+        document.write(b+"<br>");
+
+        var c= new Date("may 30 2019");
+        document.write(c);
+    </script>
+    <br>
+    <br>
+
+    <h2>Date Parse</h2>
+    <script>
+        var msec= Date.parse("oct 08 2024");
+        document.write(msec);
+    </script>
+    <br>
+    <br>
+    <script>
+        var a= Date.parse("oct 09 2024");
+        var b= Date.parse("sep 09 2009");
+        document.write(a-b);
+    </script>
+    <br>
+    <br>
+
+    <h2>Date methods</h2>
+    <h3>Get Methods</h3>
+    <script>
+        var data= new Date();
+        document.write("Eshte viti: "+data.getFullYear()+"<br>");
+
+        document.write("Muaji eshte: "+data.getMonth()+"<br>");
+
+        document.write("Data eshte: "+data.getDate()+"<br>");
+
+        document.write("Dita eshte: "+data.getDay()+"<br>");
+
+        document.write("Ora eshte: "+data.getHours()+"<br>");
+
+        document.write("Minutat jane: "+data.getMinutes()+"<br>");
+
+        document.write("Sekondat jane: "+data.getSeconds()+"<br>");
+    </script>
+    <br>
+    <br>
+    <h3>Set Methods</h3>
+    <script>
+        //setFullYear() method --Na mundeson te vedosim vitin
+        var a = new Date();
+        
+        a.setFullYear(2020);
+        document.write(a+'<br>');
+        
+    //setMonth() method --Na mundeson te vendosim muajin
+        var b = new Date();
+        
+        b.setMonth(2);
+        document.write(b+'<br>');     
+        
+    //setDate() method --Na mundeson te e vendosim vetem diten
+        var c = new Date();
+        
+        c.setDate(10);
+        document.write(c+'<br>');
+        
+    //setDay() method --Kjo metod nuk funksionon Psee?
+        // var d = new Date();
+        
+        // d.setDay(5);
+        // document.write(d+'<br>');
+        
+    //setHours() method --Mundeson te e vendosim oren
+        var e = new Date();
+        
+        e.setHours(13);
+        document.write(e+'<br>');
+    
+    //setMinutes() method -Mundeson te vendosim minutat
+        var f = new Date();
+        
+        f.setMinutes(59);
+        document.write(f+'<br>');
+    
+    //setSeconds() method -Mundeson te vendosim secondat
+        var g = new Date();
+        
+        g.setSeconds(44);
+        document.write(g+'<br>');
+        
+    //setMilliseconds() method -Mundeson te vendosim milisecondat
+        var h = new Date();
+        
+        h.setMilliseconds(300);
+        document.write(h+'<br>');
+    </script>
+</body>
+</html>
